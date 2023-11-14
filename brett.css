@@ -1,0 +1,22 @@
+body {
+    background-color: black; /* Sets the background color */
+    color: white; /* Sets the text color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Example of a wacky font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.wacky-text {
+    font-size: 3em; /* Large text size */
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); /* Colorful text */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s infinite linear;
+}
+
+@keyframes rainbow_animation {
+    0% {background-position: 0%;}
+    100% {background-position: 100%;}
+}
